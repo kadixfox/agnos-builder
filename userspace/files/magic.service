@@ -3,7 +3,7 @@ Description=Magic
 
 [Service]
 Type=simple
-User=comma
+User=fishy
 PermissionsStartOnly=true
 ExecStartPre=/bin/bash -c "chgrp gpu /dev/ion /dev/kgsl-3d0"
 ExecStartPre=/bin/bash -c "chmod 660 /dev/ion /dev/kgsl-3d0"

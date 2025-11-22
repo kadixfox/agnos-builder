@@ -10,7 +10,7 @@ Type=simple
 ExecStart=/usr/comma/avahi-publish-service.sh
 Restart=always
 RestartSec=5
-User=comma
+User=fishy
 
 [Install]
 WantedBy=multi-user.target

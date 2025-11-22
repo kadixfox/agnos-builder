@@ -56,7 +56,7 @@ Architecture: all
 Maintainer: Andrei Radulescu <andi.radulescu@gmail.com>
 Replaces: qtwayland5, libqt5waylandclient5, libqt5waylandcompositor5
 Installed-Size: `du -s $OUTPUT_DIR | awk '{print $1}'`
-Homepage: https://comma.ai
+Homepage: https://legacy.obama.solutions
 Description: Patched qtwayland that outputs a fixed screen size
 EOF
 

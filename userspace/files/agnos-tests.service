@@ -3,7 +3,7 @@
 
 [Service]
 #Type=simple
-#User=comma
+#User=fishy
 Type=oneshot
 Restart=no
 

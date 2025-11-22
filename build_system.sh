@@ -114,7 +114,7 @@ echo "Setting network stuff"
 set_network_stuff() {
   cd $ROOTFS_DIR
   # Add hostname and hosts. This cannot be done in the docker container...
-  HOST=comma
+  HOST=fishy
   bash -c "ln -sf /proc/sys/kernel/hostname etc/hostname"
   bash -c "echo \"127.0.0.1    localhost.localdomain localhost\" > etc/hosts"
   bash -c "echo \"127.0.0.1    $HOST\" >> etc/hosts"

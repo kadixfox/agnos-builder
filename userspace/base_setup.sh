@@ -1,8 +1,8 @@
 #!/bin/bash -e
 
-USERNAME=comma
-PASSWD=comma
-HOST=comma
+USERNAME=fishy
+PASSWD=fishy
+HOST=fishy
 
 # Create identification file
 touch /TICI
@@ -43,8 +43,8 @@ echo "net.ipv4.conf.all.rp_filter = 2" >> /etc/sysctl.conf
 echo "vm.dirty_expire_centisecs = 200" >> /etc/sysctl.conf
 
 # raise comma user's process priority limits
-echo "comma - rtprio 100" >> /etc/security/limits.conf
-echo "comma - nice -10" >> /etc/security/limits.conf
+echo "fishy - rtprio 100" >> /etc/security/limits.conf
+echo "fishy - nice -10" >> /etc/security/limits.conf
 
 # Locale setup
 locale-gen en_US.UTF-8
@@ -119,7 +119,7 @@ mkdir /config && chown root:root /config
 systemctl disable systemd-pstore.service
 
 # Nopasswd sudo
-echo "comma ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+echo "fishy ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 
 # setup /bin/sh symlink
 ln -sf /bin/bash /bin/sh

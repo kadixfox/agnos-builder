@@ -3,7 +3,7 @@ After=local-fs.target
 
 [Service]
 Type=oneshot
-User=comma
+User=fishy
 ExecStart=/usr/comma/debug.py
 
 [Install]

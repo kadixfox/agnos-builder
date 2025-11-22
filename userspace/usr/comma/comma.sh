@@ -22,8 +22,8 @@ else
   echo "timed out waiting for magic, ${SECONDS}s"
 fi
 
-sudo chown comma: /data
-sudo chown comma: /data/media
+sudo chown fishy: /data
+sudo chown fishy: /data/media
 
 handle_setup_keys () {
   # install default SSH key while still in setup
